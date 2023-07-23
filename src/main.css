@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+header,
+hgroup,
+menu,
+footer,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Réinitialisation du rôle d'affichage HTML5 pour les anciens navigateurs */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* html,
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header,
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headerimg {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3% auto;
+}
+
+header nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+li {
+    list-style: none;
+}
+
+header nav a {
+    color: #ff6060;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header nav a:focus {
+    border-bottom: 3px solid #ff6060;
+}
+
+.layout {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.layout h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 41px;
+    z-index: 1;
+}
+
+.layout img {
+    width: 100%;
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.9;
+    filter: brightness(0.5);
+}
+
+.logements_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    background: #e5e5e5;
+    border-radius: 25px;
+    margin: 43px 0;
+    padding: 53px 50px;
+}
+
+.logements_container a {
+    display: block;
+    width: 30%;
+}
+
+figure {
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+figure img {
+    width: 100%;
+    max-height: 340px;
+    height: 340px;
+    object-fit: cover;
+}
+
+figure h3 {
+    left: 5.88%;
+    right: 5.88%;
+    top: 78.82%;
+    bottom: 5.88%;
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 0.5rem;
+    background: linear-gradient(rgba(7, 7, 7, 0), rgba(7, 7, 7, 0.3));
+}
+
+.footer {
+    width: 100%;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    margin-top: 60px;
+}
+
+.logo-footer {
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.footer-txt {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*Error 404*/
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ff6060;
+    font-weight: 700;
+    margin: 30px;
+}
+
+.title-error {
+    margin-top: 45px;
+    font-size: 288px;
+    text-align: center;
+}
+
+.oups {
+    text-align: center;
+    margin: 66px 0;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.link-accueil {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff6060;
+}
+
+/*Collapse*/
+.button {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #ff6060;
+    border: 1px solid #ff6060;
+    border-radius: 5px;
+}
+
+.collapse__content {
+    color: #ff6060;
+    padding: 27px;
+    line-height: 32px;
+    background: #f7f7f7;
+    border-radius: 5px;
+}
+
+/*Logement*/
+
+.carousel__picture {
+    border-radius: 25px;
+    width: 100%;
+    height: 415px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    object-fit: cover;
+    margin: auto;
+    position: relative;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel__previous {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translate(0, -50%);
+    cursor: pointer
+}
+
+.carousel__next {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translate(0, -50%);
+    cursor: pointer
+}
+
+.carousel__info {
+    color: #fff;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 32px;
+    right: calc(50% - 16px);
+}
+
+.title {
+    margin-top: 30px;
+    color: #ff6060;
+    font-size: 47px;
+    font-weight: 500;
+}
+
+.location {
+    color: #ff6060;
+    font-size: 26px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.container-tag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tag {
+    background-color: #ff6060;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-top: 35px;
+    color: white;
+}
+
+.rating {
+    display: flex;
+    justify-content: right;
+}
+
+.host__name {
+    color: #ff6060;
+}
+
+.host__picture {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+
+.container-host {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logement_collapse {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logement_informations {
+    width: 48%;
+    padding: 0 0 14px 0;
+}
+
+/* Médias queries */
+
+@media screen and (max-width: 1024px) {
+    header,
+    .container {
+        max-width: 800px;
+    }
+
+    .logements_container a {
+        width: 25%;
+    }
+
+    .logements_container figure {
+        height: 200px;
+    }
+
+    .logements_container figure h3 {
+        top: 65%;
+        font-size: 16px;
+    }
+
+    .oups {
+        font-size: 24px;
+    }
+
+    .title-error {
+        font-size: 200px;
+    }
+
+    .tag {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    .container {
+        max-width: 600px;
+    }
+
+    .logements_container a {
+        width: 45%;
+    }
+
+    .layout h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header,
+    .container {
+        max-width: 450px;
+    }
+
+    header nav a {
+        font-size: 12px;
+        font-weight: 600
+    }
+
+    .layout img {
+        height: 111px;
+    }
+
+    .layout h1 {
+        font-size: 24px;
+    }
+
+    .logements_container {
+        background: none;
+        margin: 3% 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .logements_container a {
+        width: 100%;
+    }
+
+    .logements_container figure {
+        height: 255px;
+    }
+
+    .logements_container figure h3 {
+        font-size: 18px;
+    }
+
+    .title-error {
+        font-size: 86px;
+    }
+
+    .oups {
+        font-size: 18px;
+    }
+
+    .logement_collapse {
+        flex-direction: column;
+    }
+
+    .logement_informations {
+        width: 100%;
+    }
+
+    .container-content {
+        display: block;
+    }
+
+    .carousel__picture {
+        height: 255px;
+    }
+
+    .host {
+        display: flex;
+        margin-top: 25px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rating {
+        padding-top: 20px;
+    }
+}
