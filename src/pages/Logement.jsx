@@ -23,7 +23,7 @@ function Logement() {
         <Carousel carousels={pictures} />
         <section className="container-content">
           <div>
-            <p className="title">{title}</p>
+            <h1 className="title">{title}</h1>
             <p className="location">{location}</p>
             <div className="container-tag">
               {logement.tags.map((tag, index) => (

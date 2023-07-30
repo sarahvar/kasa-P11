@@ -378,7 +378,7 @@ figure h3 {
 .title {
     margin-top: 30px;
     color: #ff6060;
-    font-size: 47px;
+    font-size: 36px;
     font-weight: 500;
 }
 
@@ -414,6 +414,7 @@ figure h3 {
 
 .host__name {
     color: #ff6060;
+    margin: 20px;
 }
 
 .host__picture {
@@ -494,7 +495,8 @@ figure h3 {
 }
 
 @media screen and (max-width: 500px) {    
-    html,
+
+html,
 body,
 div,
 span,
@@ -575,23 +577,33 @@ time,
 mark,
 audio,
 video {
-    margin: 2px;
+    margin: 0px;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: "Montserrat", sans-serif;
 }
 
-    
+li {
+    list-style: none;
+    width: 70px;
+}
+
+.headerimg {
+    margin: 25px;
+    width: 100%;
+}    
+
     header,
     .container {
         max-width: 450px;
     }
 
     header nav a {
-        font-size: 12px;
-        font-weight: 600
+        font-size: 15px;
+        font-weight: 500
     }
 
     .layout img {
@@ -655,5 +667,11 @@ video {
 
     .rating {
         padding-top: 20px;
+    }
+}
+@media screen and (max-width:320px){
+    header nav ul {
+        display: inline;
+        gap: 32px;
     }
 }
