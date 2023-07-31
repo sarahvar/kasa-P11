@@ -172,8 +172,8 @@ li {
 header nav a {
     color: #ff6060;
     font-size: 1.5rem;
-    font-weight: 500;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 header nav a:focus {
@@ -391,7 +391,7 @@ figure h3 {
 
 .container-tag {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row;
     justify-content: space-around;
 }
 
@@ -602,8 +602,7 @@ li {
     }
 
     header nav a {
-        font-size: 15px;
-        font-weight: 500
+        font-size: 12px;
     }
 
     .layout img {
