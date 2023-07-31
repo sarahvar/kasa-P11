@@ -393,6 +393,7 @@ figure h3 {
     display: flex;
     flex-wrap: row;
     justify-content: space-around;
+    gap: 15px;
 }
 
 .tag {
