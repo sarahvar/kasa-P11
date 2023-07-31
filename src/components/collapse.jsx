@@ -11,18 +11,19 @@ const Collapsible = (props) => {
     <div>
       <button className="button" onClick={toggle}>
         {props.label}
-        {!open ? (
-          <span>
-            <i className="fa-solid fa-chevron-down"></i>
-          </span>
-        ) : (
+        {open ? (
           <span>
             <i className="fa-solid fa-chevron-up"></i>
           </span>
+        ) : (
+          <span>
+            <i className="fa-solid fa-chevron-down"></i>
+          </span>
         )}
       </button>
-      {!open &&
-        (Array.isArray(props.content) ? (
+      {open ? (
+        <div className={"collapse__content"}>
+        {Array.isArray(props.content) ? (
           <ul className="collapse__content">
             {" "}
             {props.content.map((item, index) => (
@@ -31,8 +32,10 @@ const Collapsible = (props) => {
           </ul>
         ) : (
           <p className="collapse__content">{props.content}</p>
-        ))}
+        )}
     </div>
-  );
-};
+  ): null}
+  </div>
+  )
+}
 export default Collapsible;
