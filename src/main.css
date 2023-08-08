@@ -177,10 +177,10 @@ header nav a {
 }
 
 header nav a:focus {
-  border-bottom: 3px solid #ff6060;
+  border-bottom: 1px solid #ff6060;
 }
 header nav a.active {
-    border-bottom: 3px solid #ff6060;
+    border-bottom: 1px solid #ff6060;
   }
 
 .layout {
@@ -676,7 +676,11 @@ figure h3 {
   header nav ul {
     gap: 0px;
   }
-
+  header nav a {
+    font-size: 9px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
   .tag__text {
     font-size: 9px;
   }
