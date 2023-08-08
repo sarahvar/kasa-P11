@@ -329,7 +329,7 @@ figure h3 {
   padding: 12px;
   line-height: 32px;
   background: #f7f7f7;
-  border-radius: ;
+  border-radius: 25px;
 }
 
 /*Logement*/
@@ -671,8 +671,7 @@ figure h3 {
 }
 @media screen and (max-width: 320px) {
   header nav ul {
-    display: inline;
-    gap: 32px;
+    gap: 0px;
   }
 
   .tag__text {

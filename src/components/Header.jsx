@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import headerimg from "../assets/images/logo.svg";
 
 //Créer le component Header réutilisable pour la page about et Logement
@@ -11,12 +11,12 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link className="accueil" to={"/"}>
+            <NavLink className="accueil" to={"/"}>
               Accueil
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to={"/about"}>A propos</Link>
+            <NavLink to={"/about"}>A propos</NavLink>
           </li>
         </ul>
       </nav>
