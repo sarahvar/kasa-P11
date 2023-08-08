@@ -29,7 +29,11 @@ const router = createBrowserRouter([
   {
     path: "/logement/:id/notfound",
     element: <ErrorPage/>,
-  }
+  },
+  {
+    path:"/:test",
+    element: <ErrorPage/>,
+  },
 ]);
 //API de données fourni par react router pour créer les routes
 ReactDOM.createRoot(document.getElementById("root")).render(
