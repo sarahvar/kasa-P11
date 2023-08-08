@@ -179,6 +179,9 @@ header nav a {
 header nav a:focus {
   border-bottom: 3px solid #ff6060;
 }
+header nav a.active {
+    border-bottom: 3px solid #ff6060;
+  }
 
 .layout {
   position: relative;
