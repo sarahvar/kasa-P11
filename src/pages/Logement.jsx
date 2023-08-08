@@ -12,7 +12,7 @@ function Logement() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
   if (logement === undefined) {
-    return <Navigate to='Notfound'/>
+    return <Navigate to='notfound'/>
   }
   const { title, location, rating, host, equipments, description, pictures } =
     logement;
