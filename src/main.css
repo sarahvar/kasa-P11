@@ -605,7 +605,9 @@ figure h3 {
     font-size: 12px;
     text-transform: uppercase;
   }
-
+  header nav ul {
+    gap: 0px;
+  }
   .layout img {
     height: 111px;
   }
