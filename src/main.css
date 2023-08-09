@@ -670,7 +670,7 @@ figure h3 {
   }
 }
 .tag__text {
-  font-size: 14px;
+  font-size: 10px;
 }
 @media screen and (max-width: 320px) {
   header nav ul {
