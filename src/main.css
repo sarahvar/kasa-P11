@@ -332,7 +332,7 @@ figure h3 {
   padding: 12px;
   line-height: 32px;
   background: #f7f7f7;
-  border-radius: 25px;
+  border-radius: 0px 0px 25px 25px;
 }
 
 /*Logement*/
