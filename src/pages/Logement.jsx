@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import {Navigate, useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import logements from "../datas/logements.json";
 import Carousel from "../components/carousel";
 import Collapsible from "../components/collapse";
@@ -12,13 +12,12 @@ function Logement() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
   if (logement === undefined) {
-    return <Navigate to='notfound'/>
+    return <Navigate to="notfound" />;
   }
   const { title, location, rating, host, equipments, description, pictures } =
     logement;
   const isHostSplited = host.name.split(" ");
   const [name, lastname] = isHostSplited;
-
 
   return (
     <>

@@ -1,4 +1,4 @@
-  //Permets d'importer les components 
+//Permets d'importer les components
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
@@ -28,15 +28,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/logement/:id/notfound",
-    element: <ErrorPage/>,
+    element: <ErrorPage />,
   },
   {
-    path:"/:test",
-    element: <ErrorPage/>,
+    path: "/:test",
+    element: <ErrorPage />,
   },
   {
-    path:"/about/:test",
-    element: <ErrorPage/>,
+    path: "/about/:test",
+    element: <ErrorPage />,
   },
 ]);
 //API de données fourni par react router pour créer les routes

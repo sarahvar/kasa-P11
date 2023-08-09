@@ -180,8 +180,8 @@ header nav a:focus {
   border-bottom: 1px solid #ff6060;
 }
 header nav a.active {
-    border-bottom: 1px solid #ff6060;
-  }
+  border-bottom: 1px solid #ff6060;
+}
 
 .layout {
   position: relative;
@@ -680,8 +680,14 @@ figure h3 {
     font-size: 9px;
     margin-left: 20px;
     text-transform: uppercase;
-}
+  }
   .tag__text {
     font-size: 9px;
   }
+  .rating {
+    margin-right: -25px;
+}
+.host__name {
+  margin: 4px;
+}
 }
