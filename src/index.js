@@ -27,19 +27,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/logement/:id/notfound",
-    element: <ErrorPage />,
-  },
-  {
-    path: "/logement/:id/:test",
-    element: <ErrorPage />,
-  },
-  {
-    path: "/:test",
-    element: <ErrorPage />,
-  },
-  {
-    path: "/about/:test",
+    path: "/logement/notfound",
     element: <ErrorPage />,
   },
 ]);
